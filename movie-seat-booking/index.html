@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Movie Seat Booking</title>
+  </head>
+  <body>
+    <div class="movie-container">
+      <h3>Some Movie Name</h3>
+    </div>
+    <div class="time-container">
+      <label>Pick a time:</label>
+      <select id="time">
+        <option value="9">9:00 AM - Early Bird ($9)</option>
+        <option value="12">3:00 PM - General ($12)</option>
+        <option value="14">8:00 PM - Evening ($14)</option>
+      </select>
+    </div>
+
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>Vacant</small>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <small>Selected</small>
+      </li>
+      <li>
+        <div class="seat occupied"></div>
+        <small>Occupied</small>
+      </li>
+    </ul>
+
+    <div class="container">
+      <div class="screen">
+        <big>Screen</big>
+      </div>
+      <div class="seats-container">
+        <div class="row"></div>
+      </div>
+    </div>
+    <p class="text" id="list-seats">No seats selected.</p>
+    <p class="text">
+      You have selected
+      <span id="count">0</span> seats for a price of $<span id="total">0</span>
+    </p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
