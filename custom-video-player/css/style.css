@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+:root {
+  --button-color: #3071a9;
+  --button-hover-color:#439eee;
+  --control-color: #333;
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Oxygen', sans-serif;
+  background-color: rgb(24, 24, 24);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* max-height: 100vh; */
+  margin: 0;
+}
+
+h1 {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.screen {
+  cursor: pointer;
+  width: 90%;
+  max-height: 80vh;
+  background-color: black !important;
+
+}
+
+.controls {
+  background: var(--control-color);
+  color: #fff;
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  /* padding: 8px; */
+  padding: 0 10px;
+  border-radius: 0 0 5px 5px;
+}
+
+.controls .fa-play {
+  color: var(--button-color);
+  /* To make the button align with pause button */
+  padding-right: 1.9px;
+}
+
+.controls .fa-volume-up {
+  color: var(--button-color);
+  padding-right: 10px;
+}
+
+.controls .fa-volume-down {
+  color: var(--button-color);
+  padding-right: 10px;
+}
+
+.controls .fa-volume-mute {
+  color: var(--button-color);
+  padding-right: 10px;
+}
+
+.controls .fa-pause {
+  color: var(--button-color);
+}
+
+.controls .timestamp {
+  color: #fff;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.controls .btn {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding-right: 10px;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.slider-wrapper {
+  display: inline-block;
+  width: 0;
+}
+.slider-wrapper input {
+  width: 150px;
+  height: 45px;
+  margin: 0;
+  padding: 12px 10px 12px 10px;
+  transform-origin: 75px 75px;
+  transform: rotate(-90deg);
+  position: relative;
+  top:-150px;
+  right: 55px;
+  background-color: var(--control-color);
+  visibility: hidden;
+  opacity: 50%;
+  transition: opacity 0.5s;
+}
+
+
+.slider-wrapper input:hover {
+  opacity: 100%;
+  transition: opacity 0.5s;
+}
+
+.pressed i{
+  color: var(--button-hover-color) !important;
+}
+
+button i:hover {
+  color: var(--button-hover-color) !important;
+}
