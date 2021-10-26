@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #8d92fc;
+  --secondary-color: #fff;
+  --textbox-color: rgba(99, 99, 99, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(39, 39, 39);
+  font-family: 'Open Sans', sans-serif;
+  color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 800px;
+}
+
+aside {
+  padding: 10px 20px;
+  width: 250px;
+  border-right: 1px solid var(--secondary-color);
+}
+
+button {
+  cursor: pointer;
+  background-color: var(--textbox-color);
+  color:var(--primary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 16px;
+
+}
+
+main {
+  flex: 1;
+  padding: 10px 20px;
+}
+
+h2 {
+  border-bottom: 1px solid var(--secondary-color);
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 200;
+  margin: 0 0 20px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+h3 {
+  background-color: rgb(90, 90, 90);
+  border-bottom: 1px solid var(--secondary-color);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 250;
+  margin: 20px 0 0;
+}
+
+.person {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
