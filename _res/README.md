@@ -1,0 +1,3 @@
+# Resources
+
+## Images to serve
