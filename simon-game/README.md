@@ -1,8 +1,6 @@
-# Simon Game
+# Simon Game - [Live Demo](https://rphase.github.io/justwebprojects/simon-game/)
 
 Press the colored buttons in the same order.
-
-### [Live Demo](https://rphase.github.io/justwebprojects/simon-game/)
 
 <br>
 
