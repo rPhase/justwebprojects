@@ -3,221 +3,225 @@ html {
 }
 
 body {
-	font-family: 'Montserrat', sans-serif;
-	text-align: center;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: bold;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 }
 
 p {
-	color: #8f8f8f inherit;
+  color: #8f8f8f inherit;
 }
 
 /* Headings */
 
 .big-heading {
-	font-size: 3.5rem;
-	line-height: 1.5;
-	font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 900;
 }
 
 .section-heading {
-	font-size: 3rem;
-	line-height: 1.5;
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 /* Containers */
 
 .container-fluid {
-	padding: 7% 15%;
+  padding: 7% 15%;
 }
 
 /* Sections */
 
 .colored-section {
-	color: white;
+  color: white;
 }
 
 .white-section {
-	background-color: white;
-	color: black;
+  background-color: white;
+  color: black;
 }
 
 /* Navigation Bar */
 
 .navbar {
-	padding: 0 0 4.5rem;
+  padding: 0 0 4.5rem;
 }
 
 .navbar-brand {
-	font-family: 'Ubuntu';
-	font-size: 3rem;
-	font-weight: bold;
+  font-family: "Ubuntu";
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .nav-item {
-	padding: 0 18px;
+  padding: 0 18px;
 }
 
 .nav-link {
-	font-size: 1.2rem;
-	font-weight: 300;
+  font-size: 1.2rem;
+  font-weight: 300;
 }
 
 /* Title Section */
 
 #title {
-	background-image: linear-gradient(to top right, #ff4c68, rgb(74, 17, 182));
-	text-align: left;
+  background-image: linear-gradient(to top right, #ff4c68, rgb(74, 17, 182));
+  text-align: left;
 }
 
 #title .container-fluid {
-	padding: 3% 15% 7%;
+  padding: 3% 15% 7%;
 }
 
 /* Download Buttons */
 
 .dl-btn {
-	margin: 5% 3% 5% 0;
+  margin: 5% 3% 5% 0;
 }
 
 /* Title Image */
 
 .title-img {
-	width: 60%;
-	transform: rotate(25deg);
-	position: absolute;
-	right: 30%;
+  width: 60%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
 }
 
 /* Features */
 #features {
-	position: relative;
+  position: relative;
 }
 
 .feature-title {
-	font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .feature-box {
-	padding: 5%;
+  padding: 5%;
 }
 
 .icon {
-	color: #ef8172;
-	margin-bottom: 1rem;
+  color: #ef8172;
+  margin-bottom: 1rem;
 }
 
 .icon:hover {
-	color: #ff4c68;
-	font-size: 80px;
+  color: #ff4c68;
+  font-size: 80px;
 }
 
 /* Testimonial Section */
 
 #testimonials {
-	background-image: linear-gradient(to bottom, #ff4c68, rgb(204, 122, 0));
+  background-image: linear-gradient(to bottom, #ff4c68, rgb(204, 122, 0));
 }
 
 .testimonial-text {
-	font-size: 2.5rem;
-	line-height: 1.5;
-	min-height: 180px;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  min-height: 180px;
 }
 
 .testimonial-img {
-	width: 10%;
-	border-radius: 100%;
-	margin: 20px;
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
 }
 
-
 #press {
-	background-color: rgb(204, 122, 0);
-	padding-bottom: 3%;
+  background-color: rgb(204, 122, 0);
+  padding-bottom: 3%;
+  overflow: hidden;
 }
 
 .press-container {
-	padding: 0 10%;
+  padding: 0 10%;
 }
 
 .press-logo {
-	width: 60%;
-	margin: 20px 20px 50px;
+  width: 60%;
+  margin: 20px 20px 50px;
 }
 
 /* Pricing Section */
 
 #pricing {
-	padding: 100px;
+  padding: 100px;
 }
 
 .price-text {
-	font-size: 3rem;
-	line-height: 1.5;
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .pricing-col {
-	padding: 3% 2%;
+  padding: 3% 2%;
 }
 
-#card-1:hover .card-body{
-	background-color: #ffeeec;
-	transition: 0.4s;
+#card-1:hover .card-body {
+  background-color: #ffeeec;
+  transition: 0.4s;
 }
 
-#card-2:hover .card-body{
-	background-color: #ffeeec;
-	transition: 0.4s;
+#card-2:hover .card-body {
+  background-color: #ffeeec;
+  transition: 0.4s;
 }
 
-#card-3:hover .card-body{
-	background-color: #ffeeec;
-	transition: 0.4s;
+#card-3:hover .card-body {
+  background-color: #ffeeec;
+  transition: 0.4s;
 }
 
 @media (max-width: 1028px) {
-	#title {
-		text-align: center;
-	}
-	.title-img {
-		position: static;
-		transform: rotate(0);
-	}
-	.testimonial-text {
-		font-size: 2rem;
-	}
+  #title {
+    text-align: center;
+  }
+  .title-img {
+    position: static;
+    transform: rotate(0);
+  }
+  .testimonial-text {
+    font-size: 2rem;
+  }
 }
 
 @media (min-width: 1550px) {
-	.title-img {
-		width: 40%;
-	}
+  .title-img {
+    width: 40%;
+  }
 }
 
 /* Call to Action Section */
 
 #cta {
-	/* background-color: red; */
-	background-image: linear-gradient(to bottom right, rgb(204, 122, 0) ,#ff4c68);
+  /* background-color: red; */
+  background-image: linear-gradient(to bottom right, rgb(204, 122, 0), #ff4c68);
 }
-
 
 /* Footer Section */
 
 #footer {
-	line-height: 3;
+  line-height: 3;
 }
 
 .back-to-top {
-	color: black;
-	display: inline-block;
+  color: black;
+  display: inline-block;
 }
 
 .social-icon {
-	color: black;
-	margin: 20px 10px;
+  color: black;
+  margin: 20px 10px;
 }
