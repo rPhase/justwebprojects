@@ -6,7 +6,7 @@ const notification = document.getElementById("notification-container");
 const finalMessage = document.getElementById("final-message");
 const figureParts = document.querySelectorAll(".figure-part");
 
-const words = ["application", "programming", "interface", "test"];
+// let words = ["application", "programming", "interface", "test"];
 
 // Keep track of game state
 let running = true;
@@ -16,11 +16,31 @@ const correctLetters = [];
 const wrongLetters = [];
 
 // Randomly pick a word from the words list
-let selectedWord = words[Math.floor(Math.random() * words.length)];
+// let selectedWord = words[Math.floor(Math.random() * words.length)];
+
+// Fetch random words from API
+const randomWords = (async () => {
+  const res = await fetch(
+    "https://random-word-form.herokuapp.com/random/noun?count=15"
+  );
+  const data = await res.json();
+  return data;
+})();
+
+// Randomly pick a word from the words list
+async function pickWord() {
+  const words = await randomWords;
+  const word = words[Math.floor(Math.random() * words.length)];
+  console.log(word);
+  return word;
+}
+
+let wordPromise = pickWord();
 
 // Take the selected word, split the letters, create a span for each letter
 // checking if each letter has been guessed
-function displayWord() {
+async function displayWord() {
+  const selectedWord = (await wordPromise).toLowerCase();
   wordEl.innerHTML = `
     ${selectedWord
       .split("")
@@ -35,8 +55,11 @@ function displayWord() {
   `;
   // Remove newline character
   const innerWord = wordEl.innerText.replace(/\n/g, "");
+  // const cleanWord = selectedWord.replace(/[\-\s]/g), "");
   // Check to see if the word matches the selected word to finish the game
-  if (innerWord === selectedWord) {
+  // Remove special characters from the selected word
+  const symbols = /[\s`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/g;
+  if (innerWord === selectedWord.replace(symbols, "")) {
     running = false;
     finalMessage.innerText = "Congratulations! You win!";
     popup.style.display = "flex";
@@ -44,7 +67,8 @@ function displayWord() {
 }
 
 // Update the wrong letters
-function updateWrongLetters() {
+async function updateWrongLetters() {
+  const selectedWord = await wordPromise;
   // Display wrong letters
   wrongLettersEl.innerHTML = `
     ${wrongLetters.length > 0 ? "<p>Wrong</p>" : ""}
@@ -79,8 +103,9 @@ function showNotification() {
 
 // Keydown letter press
 // KeyCode is deprecated in favor of key or code
-window.addEventListener("keydown", (e) => {
+window.addEventListener("keydown", async (e) => {
   if (e.key.match(/^[a-z]{1}/) && running) {
+    const selectedWord = (await wordPromise).toLowerCase();
     const letter = e.key;
     if (selectedWord.includes(letter)) {
       if (!correctLetters.includes(letter)) {
@@ -106,7 +131,8 @@ playAgainBtn.addEventListener("click", () => {
   correctLetters.splice(0);
   wrongLetters.splice(0);
   // Chose a new random word from the words list
-  selectedWord = words[Math.floor(Math.random() * words.length)];
+  wordPromise = pickWord();
+  // selectedWord = words[Math.floor(Math.random() * words.length)];
   // Update the display
   displayWord();
   updateWrongLetters();

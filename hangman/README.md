@@ -6,6 +6,8 @@ Win: All the letters of the word are found.
 
 Lose: The figure is completed by missing too many letters.
 
+Updated to fetch random words from an online API.
+
 ![Sample](https://rphase.github.io/justwebprojects/resource/hangman.png)
 
 <!-- ## Extra info
