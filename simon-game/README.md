@@ -4,7 +4,7 @@ Press the colored buttons in the same order.
 
 <br>
 
-![Sample](https://dev.rphase.me/justwebprojects/resource/simon-game.png)
+![Sample](https://rphase.github.io/justwebprojects/resource/simon-game.png)
 
 <!-- ## Extra info
 - Bullet
