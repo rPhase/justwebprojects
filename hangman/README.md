@@ -6,7 +6,7 @@ Win: All the letters of the word are found.
 
 Lose: The figure is completed by missing too many letters.
 
-![Demo](#link to image)
+![Sample](https://dev.rphase.me/justwebprojects/resource/hangman.png)
 
 <!-- ## Extra info
 - Bullet
