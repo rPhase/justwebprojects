@@ -1,8 +1,12 @@
-# Meal Finder - [Live Demo](https://rphase.github.io/justwebprojects/title/meal-finder)
+# Meal Finder - [Live Demo](https://rphase.github.io/justwebprojects/meal-finder)
 
-Description.
+Search for meals and display a recipe.
 
-![Sample](https://rphase.github.io/justwebprojects/resource/meal-finder.png)
+Uses TheMealDB API.
+
+![Sample](https://rphase.github.io/justwebprojects/resource/meal-finder.PNG)
+
+![Sample](https://rphase.github.io/justwebprojects/resource/meal-finder-modal.PNG)
 
 <!-- ## Extra info
 - Bullet
