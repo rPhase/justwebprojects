@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap");
+
+:root {
+  --bg-color: #282c34;
+  --search-color: #3b414d;
+  --primary-color: #abb2bf;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.container {
+  margin: auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+input,
+button {
+  border: 1px solid var(--primary-color);
+  font-size: 14px;
+  padding: 8px 10px;
+  margin: 0;
+  background: var(--search-color);
+  color: var(--primary-color);
+}
+
+input[type="text"] {
+  width: 300px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  font-weight: bold;
+  /* border-right: 0; */
+}
+
+input:focus {
+  outline: none;
+}
+
+button.random-btn {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  cursor: pointer;
+}
+
+button.search-btn {
+  cursor: pointer;
+  border-left: 0;
+  border-right: 0;
+}
+
+@media (max-width: 800px) {
+}
+@media (max-width: 700px) {
+}
+@media (max-width: 500px) {
+  input[type="text"] {
+    width: 100%;
+  }
+}
