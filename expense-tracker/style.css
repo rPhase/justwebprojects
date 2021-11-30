@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+:root {
+  --bg-color: #282c34;
+  --input-color: #3b414d;
+  --primary-color: #abb2bf;
+  --button-color: #4f50a7;
+  --plus-color: #2ecc71;
+  --minus-color: #c0392b;
+  --overlay-color: rgba(255, 255, 255, 0.05);
+  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  margin: 30px auto;
+  width: 350px;
+}
+
+h1 {
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+h1.plus {
+  color: var(--plus-color);
+}
+
+h1.minus {
+  color: var(--minus-color);
+}
+
+h3 {
+  border-bottom: 1px solid #fff;
+}
+
+h4 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.inc-exp-container {
+  background-color: var(--overlay-color);
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  border-radius: 3px;
+}
+
+.inc-exp-container > div {
+  flex: 1;
+  text-align: center;
+}
+
+.inc-exp-container > div:first-of-type {
+  border-right: 1px solid var(--primary-color);
+}
+
+.money {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+
+.money.plus {
+  color: var(--plus-color);
+}
+
+.money.minus {
+  color: var(--minus-color);
+}
+
+label {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+input[type="text"],
+input[type="number"] {
+  background: var(--input-color);
+  color: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  border: none;
+  border-radius: 3px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+.btn {
+  background-color: var(--button-color);
+  color: #fff;
+  box-shadow: var(--box-shadow);
+  border: 0;
+  display: block;
+  font-size: 16px;
+  margin: 10px 0 30px;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.list li {
+  background-color: var(--overlay-color);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 3px;
+}
+
+.list li.plus {
+  border-right: 5px solid var(--plus-color);
+}
+.list li.minus {
+  border-right: 5px solid var(--minus-color);
+}
+
+.delete-btn {
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 3px;
+}
+
+.list li:hover .delete-btn {
+  opacity: 1;
+}
+
+/* Hide the input spinners */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
