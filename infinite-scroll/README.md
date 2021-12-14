@@ -1,8 +1,10 @@
-# Title - [Live Demo](https://rphase.github.io/justwebprojects/title/)
+# Infinite Scroll - [Live Demo](https://rphase.github.io/justwebprojects/infinite-scroll/)
 
-Description.
+Infinite scrolling posts. Fetch and load 5 posts. When scrolling to the bottom, fetch another 5 posts.
 
-![Sample](https://rphase.github.io/justwebprojects/resource/title.png)
+API used: https://jsonplaceholder.typicode.com/
+
+![Sample](https://rphase.github.io/justwebprojects/resource/infinite-scroll.png)
 
 <!-- ## Extra info
 - Bullet
