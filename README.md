@@ -17,3 +17,4 @@ Projects will specify use of various stacks, frameworks, and public APIs as need
 | 07  |   [Modal Menu Slider](https://github.com/rPhase/justwebprojects/tree/master/modal-menu-slider)   |  [Live Demo](https://rphase.github.io/justwebprojects/modal-menu-slider/)  |
 | 08  |             [Hangman](https://github.com/rPhase/justwebprojects/tree/master/hangman)             |       [Live Demo](https://rphase.github.io/justwebprojects/hangman/)       |
 | 09  |         [Meal Finder](https://github.com/rPhase/justwebprojects/tree/master/meal-finder)         |     [Live Demo](https://rphase.github.io/justwebprojects/meal-finder/)     |
+| 10  |     [Infinite Scroll](https://github.com/rPhase/justwebprojects/tree/master/infinite-scroll)     |   [Live Demo](https://rphase.github.io/justwebprojects/infinite-scroll/)   |
