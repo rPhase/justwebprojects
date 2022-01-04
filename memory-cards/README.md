@@ -1,8 +1,9 @@
-# Memory Cards - [Live Demo](https://rphase.github.io/justwebprojects/title/)
+# Memory Cards - [Live Demo](https://rphase.github.io/justwebprojects/memory-cards/)
 
 Flash card app.
 
-![Sample](https://rphase.github.io/justwebprojects/resource/title.png)
+![Sample](https://rphase.github.io/justwebprojects/resource/memory-cards-1.png)
+![Sample](https://rphase.github.io/justwebprojects/resource/memory-cards-2.png)
 
 ## Project Specifications
 
