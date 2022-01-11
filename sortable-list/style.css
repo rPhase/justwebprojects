@@ -47,6 +47,7 @@ body {
   display: flex;
   flex: 1;
   box-shadow: var(--box-shadow);
+  font-weight: bold;
 }
 
 .draggable-list li:not(:last-of-type) {
