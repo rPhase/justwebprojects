@@ -8,7 +8,20 @@
     <title>Text to Speech Reader</title>
   </head>
   <body>
-    <h1>Text to Speech Reader</h1>
+    <div class="container">
+      <h1>Text to Speech Reader</h1>
+      <button id="toggle" class="btn btn-toggle">Toggle Text Box</button>
+      <div class="modal-container" id="modal">
+        <div id="text-box" class="text-box">
+          <div id="close" class="close">X</div>
+          <h3>Choose Voice</h3>
+          <select id="voices"></select>
+          <textarea id="text" placeholder="Enter text to read..."></textarea>
+          <button id="read" class="btn">Read Text</button>
+        </div>
+      </div>
+      <main></main>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
