@@ -11,3 +11,4 @@ A text to speech app for non-verbal people. Pre-made buttons and custom text spe
 - Modal popup box for custom text and changing voices
 - Speaks the text typed in
 - Change voices and accents
+- Load data from json file
