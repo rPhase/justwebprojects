@@ -25,5 +25,7 @@ Game where you control a paddle with the arrow keys to bounce a ball up to break
 ## References
 
 https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API
+
 https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
+
 https://aleclownes.com/2017/02/01/crt-display.html
