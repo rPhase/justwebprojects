@@ -8,6 +8,13 @@ API used: https://jsonplaceholder.typicode.com/
 
 ![Sample](https://rphase.github.io/justwebprojects/resource/infinite-scroll.png)
 
-<!-- ## Extra info
-- Bullet
-- Bullet -->
+## Project Specifications
+
+- Create UI & custom CSS loader animation
+- Fetch initial posts from API and display
+- Scroll down, show loader and fetch next set of posts
+- Add filtering for fetched posts
+
+## References
+
+https://javascript.plainenglish.io/how-to-implement-infinite-scroll-with-vanilla-javascript-f7733cdb026c

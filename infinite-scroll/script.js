@@ -69,13 +69,23 @@ function filterPosts(e) {
 // Show initial posts
 showPosts();
 
-// Event Listener for scrolling function
-window.addEventListener("scroll", () => {
-  const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+filter.addEventListener("input", filterPosts);
 
-  if (scrollTop + clientHeight >= scrollHeight - 50) {
+// Event Listener for scrolling function
+
+// window.addEventListener("scroll", () => {
+//   const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+
+//   if (scrollTop + clientHeight >= scrollHeight - 50) {
+//     showLoading();
+//   }
+// });
+
+// Modify event listener for scrolling to be more compatible with mobile
+// https://javascript.plainenglish.io/how-to-implement-infinite-scroll-with-vanilla-javascript-f7733cdb026c
+window.addEventListener("scroll", () => {
+  const { innerHeight, scrollY } = window;
+  if (innerHeight + scrollY >= document.body.offsetHeight - 100) {
     showLoading();
   }
 });
-
-filter.addEventListener("input", filterPosts);
