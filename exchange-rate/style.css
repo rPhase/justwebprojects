@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 :root {
-  --primary-color: #9a9fff;
-  --secondary-color: #fff;
-  --textbox-color: rgba(143, 143, 143, 0.5);
+  --text-color: #abb2bf;
+  --button-color: #4f50a7;
+  --bg-color: #282c34;
+  --input-color: #3b414d;
+  --overlay-color: rgba(255, 255, 255, 0.05);
+  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 * {
@@ -11,9 +14,9 @@
 }
 
 body {
-  background-color: rgb(39, 39, 39);
+  background-color: var(--bg-color);
   font-family: "Inter", sans-serif;
-  color: var(--secondary-color);
+  color: var(--text-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,7 +26,7 @@ body {
 }
 
 h1 {
-  color: var(--primary-color);
+  color: var(--text-color);
   text-align: center;
 }
 
@@ -32,13 +35,13 @@ p {
 }
 
 .btn {
-  color: var(--secondary-color);
-  background: var(--primary-color);
-  border: 2px solid var(--secondary-color);
+  color: white;
+  background: var(--button-color);
+  box-shadow: var(--box-shadow);
+  border: 0;
   cursor: pointer;
   border-radius: 5px;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 18px;
   padding: 5px 12px;
   font-family: inherit;
 }
@@ -59,7 +62,10 @@ p {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  border: 1px solid #dedede;
+  border: 0;
+  background-color: var(--input-color);
+  color: var(--text-color);
+  box-shadow: var(--box-shadow);
   font-family: inherit;
   font-size: 16px;
   background-image: url("img/dropdown.svg");
@@ -72,8 +78,9 @@ p {
 .currency input {
   border: 0;
   font-family: inherit;
-  color: var(--secondary-color);
-  background: var(--textbox-color);
+  color: var(--text-color);
+  background: var(--overlay-color);
+  box-shadow: var(--box-shadow);
   border-radius: 5px;
   font-size: 30px;
   text-align: right;
@@ -87,10 +94,11 @@ p {
 }
 
 .rate {
-  color: var(--primary-color);
+  color: var(--text-color);
+  box-shadow: var(--box-shadow);
   font-size: 16px;
   padding: 0 10px;
-  background-color: var(--textbox-color);
+  background-color: var(--input-color);
   border-radius: 5px;
 }
 
@@ -100,9 +108,7 @@ p {
   }
 }
 
-
 /* Hide the input spinners */
-
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -110,6 +116,6 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 /* Firefox */
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
