@@ -2,8 +2,6 @@
 
 Video player using the HTML5 video element and it's JavaScript API with a custom CSS design.
 
-<!-- ![Sample](https://rphase.github.io/justwebprojects/resource/custom-video-player.png) -->
-
 ![Sample](../resource/custom-video-player.png)
 
 ## Project Specifications
