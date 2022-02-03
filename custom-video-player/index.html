@@ -1,40 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Custom Video Player</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/progress.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <title>Custom Video Player</title>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/progress.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-  <h1>
-    <i class="fa fa-play-circle fa-2x">&nbsp;</i>
-    Custom Video Player
-  </h1>
-  <div class="container">
-    <video src="videos/gone.mp4" id="video" class="screen" poster="img/poster.png"></video>
-    <div class="controls">
-      <button class="btn" id="play">
-        <i class="fa fa-play fa-2x"></i>
-      </button>
-      <button class="btn" id="volume">
-        <i class="fa fa-volume-up fa-2x"></i>
-      </button>
-      <div class="slider-wrapper">
-        <input type="range" id="volume-slider" class="progress" min="0" max="100" step="1">
+  <body>
+    <h1>
+      <i class="fa fa-play-circle fa-2x">&nbsp;</i>
+      Custom Video Player
+    </h1>
+    <div class="container">
+      <video
+        src="videos/densha.mp4"
+        id="video"
+        class="screen"
+        poster="img/poster.png"
+      ></video>
+      <div class="controls">
+        <button class="btn" id="play">
+          <i class="fa fa-play fa-2x"></i>
+        </button>
+        <button class="btn" id="volume">
+          <i class="fa fa-volume-up fa-2x"></i>
+        </button>
+        <div class="slider-wrapper">
+          <input
+            type="range"
+            id="volume-slider"
+            class="progress"
+            min="0"
+            max="100"
+            step="1"
+          />
+        </div>
+        <input
+          type="range"
+          id="progress"
+          class="progress"
+          min="0"
+          max="100"
+          step="0.1"
+          value="0"
+        />
+        <span class="timestamp" id="timestamp">00:00</span>
+        <span>/</span>
+        <span class="timetotal" id="timetotal">00:00</span>
       </div>
-      <input type="range" id="progress" class="progress" min="0" max="100" step="0.1" value="0">
-      <span class="timestamp" id="timestamp">00:00</span>
-      <span>/</span>
-      <span class="timetotal" id="timetotal">00:00</span> 
     </div>
-  </div>
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
