@@ -4,8 +4,13 @@ Press the colored buttons in the same order.
 
 <br>
 
-![Sample](https://rphase.github.io/justwebprojects/resource/simon-game.png)
+![Sample](../resource/simon-game.png)
 
-<!-- ## Extra info
-- Bullet
-- Bullet -->
+## Project Specifications
+
+- Randomly generate next button color
+- Store button color combinations in array (game/user)
+- Compare arrays for correct answer
+- Level up/Game over logic
+- Add sound effects
+- jQuery
