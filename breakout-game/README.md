@@ -2,9 +2,9 @@
 
 Game where you control a paddle with the arrow keys to bounce a ball up to break bricks. This app uses the HTML5 canvas element and API
 
-![Sample](https://rphase.github.io/justwebprojects/resource/breakout-game.png)
+![Sample](../resource/breakout-game.png)
 
-![Sample](https://rphase.github.io/justwebprojects/resource/breakout-game2.png)
+![Sample](../resource/breakout-game2.png)
 
 ## Project Specifications
 
