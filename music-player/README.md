@@ -1,6 +1,6 @@
-# Title - [Live Demo](https://rphase.github.io/justwebprojects/music-player/)
+# Music Player - [Live Demo](https://rphase.github.io/justwebprojects/music-player/)
 
-Create beautiful UI to play music stored in the "music folder" using the HTML5 audio API
+Create UI to play music stored in the music folder using the HTML5 audio API.
 
 ![Sample](../resource/music-player.png)
 
@@ -10,4 +10,5 @@ Create beautiful UI to play music stored in the "music folder" using the HTML5 a
 - Add play and pause functionality
 - Switch songs
 - Progress bar
-- volume control
+- Volume control bar
+- Repeat button
