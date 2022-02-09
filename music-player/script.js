@@ -23,7 +23,7 @@ const songs = ["hey", "summer", "ukulele", "fenderbender"];
 let volLevel = 0.4;
 
 // Keep track of song
-let songIndex = 2;
+let songIndex = 3;
 
 // Init default values
 (function () {
