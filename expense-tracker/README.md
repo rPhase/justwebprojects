@@ -2,8 +2,13 @@
 
 Track income and expenses by adding new transactions. History is stored to local storage.
 
-![Sample](https://rphase.github.io/justwebprojects/resource/expense-tracker.png)
+![Sample](../resource/expense-tracker.png)
 
-<!-- ## Extra info
-- Bullet
-- Bullet -->
+## Project Specifications
+
+- Create UI
+- Display transaction items in DOM
+- Show balance, expense and income totals
+- Add new transation and reflect in total
+- Delete items from DOM
+- Persist to local storage
