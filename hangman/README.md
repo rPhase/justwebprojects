@@ -8,8 +8,13 @@ Lose: The figure is completed by missing too many letters.
 
 Updated to fetch random words from an online API.
 
-![Sample](https://rphase.github.io/justwebprojects/resource/hangman.png)
+![Sample](../resource/hangman.png)
 
-<!-- ## Extra info
-- Bullet
-- Bullet -->
+- Display hangman pole and figure using SVG
+- Load a random word
+- Display word in UI with correct letters
+- Display wrong letters
+- Show notification when selecting a letter twice
+- Show popup on win or lose
+- Play again button to reset game
+- Get random words from [API](https://random-word-form.herokuapp.com)
