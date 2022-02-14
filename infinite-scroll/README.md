@@ -6,7 +6,7 @@ Filter posts for matching post title or post body. Only filters currently loaded
 
 API used: https://jsonplaceholder.typicode.com/
 
-![Sample](https://rphase.github.io/justwebprojects/resource/infinite-scroll.png)
+![Sample](../resource/infinite-scroll.png)
 
 ## Project Specifications
 
