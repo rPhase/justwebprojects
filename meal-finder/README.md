@@ -1,13 +1,15 @@
 # Meal Finder - [Live Demo](https://rphase.github.io/justwebprojects/meal-finder)
 
-Search for meals and display a recipe.
+Search for meals and display a recipe using an API.
 
-Uses TheMealDB API.
+![Sample](../resource/meal-finder.png)
 
-![Sample](https://rphase.github.io/justwebprojects/resource/meal-finder.PNG)
+![Sample](../resource/meal-finder-modal.png)
 
-![Sample](https://rphase.github.io/justwebprojects/resource/meal-finder-modal.PNG)
+## Project Specifications
 
-<!-- ## Extra info
-- Bullet
-- Bullet -->
+- Display UI with search form and random generator button
+- Connect to [TheMealDB API](https://www.themealdb.com) and get meals
+- Display meals in DOM with image and hover effect
+- Click on meal to see the details in modal object
+- Click on generate button to fetch & display a random meal
