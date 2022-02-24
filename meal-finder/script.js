@@ -10,19 +10,31 @@ const search = document.getElementById("search"),
 // Search and fetch meal from API
 function searchMeal(e) {
   // Prevent the default behavior of the submit
-  e.preventDefault();
+  if (e.type === "submit") {
+    e.preventDefault();
+  }
 
   // Clear the meals
   mealsEl.innerHTML = "";
 
   // Get the search term
-  const term = search.value.trim();
+  let term = search.value.trim().toLowerCase();
+
+  // Default search query parameter
+  let param = "search.php?s";
 
   // Check for empty
   if (!term) {
     resultHeading.innerHTML = `<p>Please enter a search term.</p>`;
   } else {
-    fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${term}`)
+    // Determine if searching by area/category tags
+    const splitTerm = term.split(":");
+    if (splitTerm[0].includes("area") || splitTerm[0].includes("category")) {
+      param = `filter.php?${splitTerm[0][0]}`;
+      term = splitTerm[1];
+    }
+
+    fetch(`https://www.themealdb.com/api/json/v1/1/${param}=${term}`)
       .then((res) => res.json())
       .then((data) => {
         resultHeading.innerHTML = `<h2>Search results for "${term}":</h2>`;
@@ -68,6 +80,14 @@ function getRandomMeal() {
   modal.classList.add("show-modal");
 }
 
+// Fetch by clicking on tag
+function searchTag(tag) {
+  // Close the modal
+  modal.classList.remove("show-modal");
+  search.value = tag;
+  searchMeal("");
+}
+
 // Add the meal to DOM
 function addMealToDOM(meal) {
   const ingredients = [];
@@ -86,8 +106,16 @@ function addMealToDOM(meal) {
       <h1>${meal.strMeal}</h1>
       <img src="${meal.strMealThumb}" alt="${meal.strMeal}" />
       <div class="single-meal-info">
-        ${meal.strCategory ? `<p>${meal.strCategory}</p>` : ""}
-        ${meal.strArea ? `<p>${meal.strArea}</p>` : ""}
+        ${
+          meal.strCategory
+            ? `<p class="tag" onclick="searchTag('category:${meal.strCategory}')">${meal.strCategory}</p>`
+            : ""
+        }
+        ${
+          meal.strArea
+            ? `<p class="tag" onclick="searchTag('area:${meal.strArea}')">${meal.strArea}</p>`
+            : ""
+        }
       </div>
       <div class="main">
         <h2>Ingredients</h2>

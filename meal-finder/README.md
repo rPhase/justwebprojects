@@ -13,3 +13,4 @@ Search for meals and display a recipe using an API.
 - Display meals in DOM with image and hover effect
 - Click on meal to see the details in modal object
 - Click on generate button to fetch & display a random meal
+- Search by category/area by clicking on tags

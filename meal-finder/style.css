@@ -205,6 +205,11 @@ button.search-btn {
   margin-right: 100%;
 }
 
+/* Recipe category Tags*/
+.tag {
+  cursor: pointer;
+}
+
 /* Scrollbar for browsers other than firefox
 */
 
