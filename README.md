@@ -23,7 +23,7 @@ Projects will specify use of various stacks, frameworks, and public APIs as need
 | 10  |     [Expense Tracker](https://github.com/rPhase/justwebprojects/tree/master/expense-tracker)     |    [Live Demo](https://rphase.github.io/justwebprojects/expense-tracker/)    |
 | 10  |        [Memory Cards](https://github.com/rPhase/justwebprojects/tree/master/memory-cards)        |     [Live Demo](https://rphase.github.io/justwebprojects/memory-cards/)      |
 | 10  |  [Movie Seat Booking](https://github.com/rPhase/justwebprojects/tree/master/movie-seat-booking)  |  [Live Demo](https://rphase.github.io/justwebprojects/movie-seat-booking/)   |
-| 10  |        [Music PLayer](https://github.com/rPhase/justwebprojects/tree/master/music-player)        |     [Live Demo](https://rphase.github.io/justwebprojects/music-player/)      |
+| 10  |        [Music Player](https://github.com/rPhase/justwebprojects/tree/master/music-player)        |     [Live Demo](https://rphase.github.io/justwebprojects/music-player/)      |
 | 10  |  [New Year Countdown](https://github.com/rPhase/justwebprojects/tree/master/new-year-countdown)  |  [Live Demo](https://rphase.github.io/justwebprojects/new-year-countdown/)   |
 | 10  |       [Sortable List](https://github.com/rPhase/justwebprojects/tree/master/sortable-list)       |     [Live Demo](https://rphase.github.io/justwebprojects/sortable-list/)     |
 | 10  |    [TTS Reader](https://github.com/rPhase/justwebprojects/tree/master/text-to-speech-reader)     | [Live Demo](https://rphase.github.io/justwebprojects/text-to-speech-reader/) |
